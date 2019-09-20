@@ -1,8 +1,8 @@
 body {
 	background-image: url(img/background.png);
-	height: 100hw;
+    height: 100vh;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	font-family: Verdana;
 	margin: 0;
 	padding: 0;
@@ -18,7 +18,7 @@ a {
 a:visited {
 	color: #fff;
 }
-.contacts a:hover,.tours-text:hover, h1:hover, h2:hover {
+.contacts a:hover, .tours-text:hover{
 	color: #f26522;
 }
 .container {
@@ -41,19 +41,26 @@ a:visited {
 	background-repeat: no-repeat;
 	background-position: top center;
 }
-.logo-img:hover {
-	background-image: url(img/logo-hover.png);
-}
 .logo-text {
 	float: left;
 	color: #fff;
-	padding-left: 10px;
+	height: 46px;
+	padding-left: 15px;
 }
-h1 {
-	font-size: 24px;
+h1 {font-size: 24px; text-transform: uppercase;}
+h2 {font-size: 18px; text-transform: uppercase;}
+
+.logo-img:hover {
+	background-image: url(img/logo-hover.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	float: left;
+	width: 46px;
+	height: 44px;
+	color: #f26522;
 }
-h2 {
-	font-size: 18px;
+.logo-text:hover {
+	color: #f26522;
 }
 .contacts {
 	padding-top: 15px;
@@ -74,6 +81,7 @@ h2 {
    clear: both;
 }
 .tours-item {
+	width: 308px;
 	display: block;
 	position: relative;
 	margin-bottom: 50px;
@@ -111,7 +119,7 @@ h2 {
 	color: #fff;
 	font-size: 14px;
 	float: right;
-	padding-top: 20px;
+	padding-top: 30px;
 	text-align: right;
 }
 .tours-hover-details:after {
